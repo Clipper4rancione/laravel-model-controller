@@ -1,5 +1,16 @@
 @extends('layout.main')
 
 @section('content')
-    <h1>MOVIES</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <ul>
+                    @foreach ($movies as $movie)
+                        <li>{{ $movie->title }}</li>
+                    @endforeach
+
+                </ul>
+            </div>
+        </div>
+    </div>
 @endsection
